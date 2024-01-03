@@ -56,7 +56,7 @@ const App = () => {
         <MainLayout subjects={subjects} quizzes={quizzes} newId={newId} />
       ),
       errorElement: (
-        <h1 className="notice">Iltimos subjectni yana bir marta bosing!</h1>
+        <h1 className="notice">Iltimos subjectni yana bir marta bosing!!</h1>
       ),
       children: [
         {
