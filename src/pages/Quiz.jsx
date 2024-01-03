@@ -3,6 +3,7 @@ import QuizOptions from "../components/QuizOptions";
 import SubmitAnswer from "../components/SubmitAnswer";
 import OptionName from "../components/OptionName";
 import PlayAgain from "../components/PlayAgain";
+import line from "../assets/line.png";
 
 const Quiz = ({ quizzes, newId, subjects }) => {
   const [select, setSelect] = useState(null);
@@ -20,7 +21,7 @@ const Quiz = ({ quizzes, newId, subjects }) => {
               Question {currentQuestion + 1} of {quizzes.length}
             </i>
             <h2 className="quiz--h2">{quizzes[currentQuestion].question}</h2>
-            <img src="../images/line.png" alt="line" />
+            <img src={line} alt="line" />
           </div>
           <div className="quiz--answers">
             <QuizOptions

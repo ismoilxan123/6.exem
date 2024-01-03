@@ -1,6 +1,7 @@
 import React from "react";
 import OptionName from "./OptionName";
-import { sun } from "../assets/sun.svg";
+import sun from "../assets/sun.svg";
+import moon from "../assets/moon.svg";
 
 const Sidebar = ({ subjects, quizzes, newId }) => {
   let count = 0;
@@ -24,7 +25,7 @@ const Sidebar = ({ subjects, quizzes, newId }) => {
           <img src={sun} alt="sun" />
           <input onClick={darkClick} type="checkbox" id="dark--input" />
           <label htmlFor="dark--input"></label>
-          <img src="../images/moon.svg" alt="moon" />
+          <img src={moon} alt="moon" />
         </div>
       </div>
     </div>
